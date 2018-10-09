@@ -13,6 +13,31 @@
 		86DB8D81216CB62000967087 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86DB8D80216CB62000967087 /* Assets.xcassets */; };
 		86DB8D84216CB62000967087 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86DB8D82216CB62000967087 /* LaunchScreen.storyboard */; };
 		86DB8D87216CB62000967087 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8D86216CB62000967087 /* main.m */; };
+		86DB8DB4216CB6ED00967087 /* FoldButtonsViewConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8D8E216CB6ED00967087 /* FoldButtonsViewConfig.m */; };
+		86DB8DB5216CB6ED00967087 /* FoldButtonsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8D90216CB6ED00967087 /* FoldButtonsView.m */; };
+		86DB8DB6216CB6ED00967087 /* BaseTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8D95216CB6ED00967087 /* BaseTextView.m */; };
+		86DB8DB7216CB6ED00967087 /* NSString+FiltrateRuler.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8D97216CB6ED00967087 /* NSString+FiltrateRuler.m */; };
+		86DB8DB8216CB6ED00967087 /* NSAttributedString+FiltrateRuler.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8D98216CB6ED00967087 /* NSAttributedString+FiltrateRuler.m */; };
+		86DB8DB9216CB6ED00967087 /* AttributedStrFiltrateRuler.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8D99216CB6ED00967087 /* AttributedStrFiltrateRuler.m */; };
+		86DB8DBA216CB6ED00967087 /* NSString+StringHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8D9D216CB6ED00967087 /* NSString+StringHandler.m */; };
+		86DB8DBB216CB6ED00967087 /* NSMutableAttributedString+ChangeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8DA2216CB6ED00967087 /* NSMutableAttributedString+ChangeStyle.m */; };
+		86DB8DBC216CB6ED00967087 /* MutableAttributedStringStyleEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8DA4216CB6ED00967087 /* MutableAttributedStringStyleEventHandler.m */; };
+		86DB8DBD216CB6ED00967087 /* BaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8DA5216CB6ED00967087 /* BaseLabel.m */; };
+		86DB8DBE216CB6ED00967087 /* NSObject+T.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8DAB216CB6ED00967087 /* NSObject+T.m */; };
+		86DB8DBF216CB6ED00967087 /* NSObject+SignalHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8DAC216CB6ED00967087 /* NSObject+SignalHandler.m */; };
+		86DB8DC0216CB6ED00967087 /* UILabel+Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8DAF216CB6ED00967087 /* UILabel+Handler.m */; };
+		86DB8DC1216CB6ED00967087 /* UIButton+Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8DB2216CB6ED00967087 /* UIButton+Handler.m */; };
+		86DB8DC2216CB6ED00967087 /* UIView+Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8DB3216CB6ED00967087 /* UIView+Handler.m */; };
+		86DB8DDD216CB71000967087 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8DC5216CB71000967087 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		86DB8DDE216CB71000967087 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8DCE216CB71000967087 /* ViewController+MASAdditions.m */; };
+		86DB8DDF216CB71000967087 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8DD2216CB71000967087 /* MASCompositeConstraint.m */; };
+		86DB8DE0216CB71000967087 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8DD3216CB71000967087 /* MASConstraintMaker.m */; };
+		86DB8DE1216CB71000967087 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8DD4216CB71000967087 /* MASLayoutConstraint.m */; };
+		86DB8DE2216CB71000967087 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8DD5216CB71000967087 /* NSArray+MASAdditions.m */; };
+		86DB8DE3216CB71000967087 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8DD6216CB71000967087 /* View+MASAdditions.m */; };
+		86DB8DE4216CB71000967087 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8DD9216CB71000967087 /* MASConstraint.m */; };
+		86DB8DE5216CB71000967087 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8DDB216CB71000967087 /* MASViewConstraint.m */; };
+		86DB8DE6216CB71000967087 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8DDC216CB71000967087 /* MASViewAttribute.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +51,62 @@
 		86DB8D83216CB62000967087 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86DB8D85216CB62000967087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86DB8D86216CB62000967087 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		86DB8D8E216CB6ED00967087 /* FoldButtonsViewConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoldButtonsViewConfig.m; sourceTree = "<group>"; };
+		86DB8D8F216CB6ED00967087 /* FoldButtonsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldButtonsView.h; sourceTree = "<group>"; };
+		86DB8D90216CB6ED00967087 /* FoldButtonsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoldButtonsView.m; sourceTree = "<group>"; };
+		86DB8D91216CB6ED00967087 /* FoldButtonsViewConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldButtonsViewConfig.h; sourceTree = "<group>"; };
+		86DB8D93216CB6ED00967087 /* BaseTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTextView.h; sourceTree = "<group>"; };
+		86DB8D94216CB6ED00967087 /* BaseLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLabel.h; sourceTree = "<group>"; };
+		86DB8D95216CB6ED00967087 /* BaseTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTextView.m; sourceTree = "<group>"; };
+		86DB8D97216CB6ED00967087 /* NSString+FiltrateRuler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FiltrateRuler.m"; sourceTree = "<group>"; };
+		86DB8D98216CB6ED00967087 /* NSAttributedString+FiltrateRuler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+FiltrateRuler.m"; sourceTree = "<group>"; };
+		86DB8D99216CB6ED00967087 /* AttributedStrFiltrateRuler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributedStrFiltrateRuler.m; sourceTree = "<group>"; };
+		86DB8D9A216CB6ED00967087 /* NSString+StringHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringHandler.h"; sourceTree = "<group>"; };
+		86DB8D9B216CB6ED00967087 /* NSString+FiltrateRuler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FiltrateRuler.h"; sourceTree = "<group>"; };
+		86DB8D9C216CB6ED00967087 /* NSAttributedString+FiltrateRuler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+FiltrateRuler.h"; sourceTree = "<group>"; };
+		86DB8D9D216CB6ED00967087 /* NSString+StringHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringHandler.m"; sourceTree = "<group>"; };
+		86DB8D9E216CB6ED00967087 /* AttributedStrFiltrateRuler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedStrFiltrateRuler.h; sourceTree = "<group>"; };
+		86DB8DA0216CB6ED00967087 /* NSMutableAttributedString+ChangeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+ChangeStyle.h"; sourceTree = "<group>"; };
+		86DB8DA1216CB6ED00967087 /* MutableAttributedStringStyleEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutableAttributedStringStyleEventHandler.h; sourceTree = "<group>"; };
+		86DB8DA2216CB6ED00967087 /* NSMutableAttributedString+ChangeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+ChangeStyle.m"; sourceTree = "<group>"; };
+		86DB8DA3216CB6ED00967087 /* NSMutableAttributedStringChangeStyleKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableAttributedStringChangeStyleKey.h; sourceTree = "<group>"; };
+		86DB8DA4216CB6ED00967087 /* MutableAttributedStringStyleEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutableAttributedStringStyleEventHandler.m; sourceTree = "<group>"; };
+		86DB8DA5216CB6ED00967087 /* BaseLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLabel.m; sourceTree = "<group>"; };
+		86DB8DA9216CB6ED00967087 /* NSObject+T.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+T.h"; sourceTree = "<group>"; };
+		86DB8DAA216CB6ED00967087 /* NSObject+SignalHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SignalHandler.h"; sourceTree = "<group>"; };
+		86DB8DAB216CB6ED00967087 /* NSObject+T.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+T.m"; sourceTree = "<group>"; };
+		86DB8DAC216CB6ED00967087 /* NSObject+SignalHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SignalHandler.m"; sourceTree = "<group>"; };
+		86DB8DAE216CB6ED00967087 /* UIButton+Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Handler.h"; sourceTree = "<group>"; };
+		86DB8DAF216CB6ED00967087 /* UILabel+Handler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Handler.m"; sourceTree = "<group>"; };
+		86DB8DB0216CB6ED00967087 /* UIView+Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Handler.h"; sourceTree = "<group>"; };
+		86DB8DB1216CB6ED00967087 /* UILabel+Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Handler.h"; sourceTree = "<group>"; };
+		86DB8DB2216CB6ED00967087 /* UIButton+Handler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Handler.m"; sourceTree = "<group>"; };
+		86DB8DB3216CB6ED00967087 /* UIView+Handler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Handler.m"; sourceTree = "<group>"; };
+		86DB8DC4216CB71000967087 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		86DB8DC5216CB71000967087 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		86DB8DC6216CB71000967087 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		86DB8DC7216CB71000967087 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		86DB8DC8216CB71000967087 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		86DB8DC9216CB71000967087 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		86DB8DCA216CB71000967087 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		86DB8DCB216CB71000967087 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		86DB8DCC216CB71000967087 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		86DB8DCD216CB71000967087 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		86DB8DCE216CB71000967087 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		86DB8DCF216CB71000967087 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		86DB8DD0216CB71000967087 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		86DB8DD1216CB71000967087 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		86DB8DD2216CB71000967087 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		86DB8DD3216CB71000967087 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		86DB8DD4216CB71000967087 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		86DB8DD5216CB71000967087 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		86DB8DD6216CB71000967087 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		86DB8DD7216CB71000967087 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		86DB8DD8216CB71000967087 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		86DB8DD9216CB71000967087 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		86DB8DDA216CB71000967087 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		86DB8DDB216CB71000967087 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		86DB8DDC216CB71000967087 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +139,10 @@
 		86DB8D76216CB61F00967087 /* FoldButtonsView */ = {
 			isa = PBXGroup;
 			children = (
+				86DB8DC3216CB71000967087 /* Masonry */,
+				86DB8D92216CB6ED00967087 /* BaseTextView */,
+				86DB8DA6216CB6ED00967087 /* Extension */,
+				86DB8D8D216CB6ED00967087 /* FoldButtonsView */,
 				86DB8D77216CB61F00967087 /* AppDelegate.h */,
 				86DB8D78216CB61F00967087 /* AppDelegate.m */,
 				86DB8D7A216CB61F00967087 /* ViewController.h */,
@@ -69,6 +154,130 @@
 				86DB8D86216CB62000967087 /* main.m */,
 			);
 			path = FoldButtonsView;
+			sourceTree = "<group>";
+		};
+		86DB8D8D216CB6ED00967087 /* FoldButtonsView */ = {
+			isa = PBXGroup;
+			children = (
+				86DB8D8E216CB6ED00967087 /* FoldButtonsViewConfig.m */,
+				86DB8D8F216CB6ED00967087 /* FoldButtonsView.h */,
+				86DB8D90216CB6ED00967087 /* FoldButtonsView.m */,
+				86DB8D91216CB6ED00967087 /* FoldButtonsViewConfig.h */,
+			);
+			path = FoldButtonsView;
+			sourceTree = "<group>";
+		};
+		86DB8D92216CB6ED00967087 /* BaseTextView */ = {
+			isa = PBXGroup;
+			children = (
+				86DB8D93216CB6ED00967087 /* BaseTextView.h */,
+				86DB8D94216CB6ED00967087 /* BaseLabel.h */,
+				86DB8D95216CB6ED00967087 /* BaseTextView.m */,
+				86DB8D96216CB6ED00967087 /* FiltrateRuler */,
+				86DB8D9F216CB6ED00967087 /* AttributedStringStyle */,
+				86DB8DA5216CB6ED00967087 /* BaseLabel.m */,
+			);
+			path = BaseTextView;
+			sourceTree = "<group>";
+		};
+		86DB8D96216CB6ED00967087 /* FiltrateRuler */ = {
+			isa = PBXGroup;
+			children = (
+				86DB8D97216CB6ED00967087 /* NSString+FiltrateRuler.m */,
+				86DB8D98216CB6ED00967087 /* NSAttributedString+FiltrateRuler.m */,
+				86DB8D99216CB6ED00967087 /* AttributedStrFiltrateRuler.m */,
+				86DB8D9A216CB6ED00967087 /* NSString+StringHandler.h */,
+				86DB8D9B216CB6ED00967087 /* NSString+FiltrateRuler.h */,
+				86DB8D9C216CB6ED00967087 /* NSAttributedString+FiltrateRuler.h */,
+				86DB8D9D216CB6ED00967087 /* NSString+StringHandler.m */,
+				86DB8D9E216CB6ED00967087 /* AttributedStrFiltrateRuler.h */,
+			);
+			path = FiltrateRuler;
+			sourceTree = "<group>";
+		};
+		86DB8D9F216CB6ED00967087 /* AttributedStringStyle */ = {
+			isa = PBXGroup;
+			children = (
+				86DB8DA0216CB6ED00967087 /* NSMutableAttributedString+ChangeStyle.h */,
+				86DB8DA1216CB6ED00967087 /* MutableAttributedStringStyleEventHandler.h */,
+				86DB8DA2216CB6ED00967087 /* NSMutableAttributedString+ChangeStyle.m */,
+				86DB8DA3216CB6ED00967087 /* NSMutableAttributedStringChangeStyleKey.h */,
+				86DB8DA4216CB6ED00967087 /* MutableAttributedStringStyleEventHandler.m */,
+			);
+			path = AttributedStringStyle;
+			sourceTree = "<group>";
+		};
+		86DB8DA6216CB6ED00967087 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				86DB8DA7216CB6ED00967087 /* NSObjectExtension */,
+				86DB8DAD216CB6ED00967087 /* UIViewExtension */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		86DB8DA7216CB6ED00967087 /* NSObjectExtension */ = {
+			isa = PBXGroup;
+			children = (
+				86DB8DA8216CB6ED00967087 /* Event */,
+			);
+			path = NSObjectExtension;
+			sourceTree = "<group>";
+		};
+		86DB8DA8216CB6ED00967087 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				86DB8DA9216CB6ED00967087 /* NSObject+T.h */,
+				86DB8DAA216CB6ED00967087 /* NSObject+SignalHandler.h */,
+				86DB8DAB216CB6ED00967087 /* NSObject+T.m */,
+				86DB8DAC216CB6ED00967087 /* NSObject+SignalHandler.m */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		86DB8DAD216CB6ED00967087 /* UIViewExtension */ = {
+			isa = PBXGroup;
+			children = (
+				86DB8DAE216CB6ED00967087 /* UIButton+Handler.h */,
+				86DB8DAF216CB6ED00967087 /* UILabel+Handler.m */,
+				86DB8DB0216CB6ED00967087 /* UIView+Handler.h */,
+				86DB8DB1216CB6ED00967087 /* UILabel+Handler.h */,
+				86DB8DB2216CB6ED00967087 /* UIButton+Handler.m */,
+				86DB8DB3216CB6ED00967087 /* UIView+Handler.m */,
+			);
+			path = UIViewExtension;
+			sourceTree = "<group>";
+		};
+		86DB8DC3216CB71000967087 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				86DB8DC4216CB71000967087 /* MASCompositeConstraint.h */,
+				86DB8DC5216CB71000967087 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				86DB8DC6216CB71000967087 /* MASConstraint+Private.h */,
+				86DB8DC7216CB71000967087 /* MASLayoutConstraint.h */,
+				86DB8DC8216CB71000967087 /* NSArray+MASShorthandAdditions.h */,
+				86DB8DC9216CB71000967087 /* MASConstraintMaker.h */,
+				86DB8DCA216CB71000967087 /* View+MASAdditions.h */,
+				86DB8DCB216CB71000967087 /* NSArray+MASAdditions.h */,
+				86DB8DCC216CB71000967087 /* MASUtilities.h */,
+				86DB8DCD216CB71000967087 /* MASViewAttribute.h */,
+				86DB8DCE216CB71000967087 /* ViewController+MASAdditions.m */,
+				86DB8DCF216CB71000967087 /* MASViewConstraint.h */,
+				86DB8DD0216CB71000967087 /* MASConstraint.h */,
+				86DB8DD1216CB71000967087 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				86DB8DD2216CB71000967087 /* MASCompositeConstraint.m */,
+				86DB8DD3216CB71000967087 /* MASConstraintMaker.m */,
+				86DB8DD4216CB71000967087 /* MASLayoutConstraint.m */,
+				86DB8DD5216CB71000967087 /* NSArray+MASAdditions.m */,
+				86DB8DD6216CB71000967087 /* View+MASAdditions.m */,
+				86DB8DD7216CB71000967087 /* View+MASShorthandAdditions.h */,
+				86DB8DD8216CB71000967087 /* Masonry.h */,
+				86DB8DD9216CB71000967087 /* MASConstraint.m */,
+				86DB8DDA216CB71000967087 /* ViewController+MASAdditions.h */,
+				86DB8DDB216CB71000967087 /* MASViewConstraint.m */,
+				86DB8DDC216CB71000967087 /* MASViewAttribute.m */,
+			);
+			path = Masonry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +350,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86DB8DBF216CB6ED00967087 /* NSObject+SignalHandler.m in Sources */,
+				86DB8DE6216CB71000967087 /* MASViewAttribute.m in Sources */,
+				86DB8DB6216CB6ED00967087 /* BaseTextView.m in Sources */,
+				86DB8DB8216CB6ED00967087 /* NSAttributedString+FiltrateRuler.m in Sources */,
+				86DB8DC0216CB6ED00967087 /* UILabel+Handler.m in Sources */,
 				86DB8D7C216CB61F00967087 /* ViewController.m in Sources */,
+				86DB8DC1216CB6ED00967087 /* UIButton+Handler.m in Sources */,
+				86DB8DDE216CB71000967087 /* ViewController+MASAdditions.m in Sources */,
+				86DB8DBC216CB6ED00967087 /* MutableAttributedStringStyleEventHandler.m in Sources */,
+				86DB8DE3216CB71000967087 /* View+MASAdditions.m in Sources */,
+				86DB8DE5216CB71000967087 /* MASViewConstraint.m in Sources */,
+				86DB8DB9216CB6ED00967087 /* AttributedStrFiltrateRuler.m in Sources */,
+				86DB8DE0216CB71000967087 /* MASConstraintMaker.m in Sources */,
+				86DB8DDD216CB71000967087 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				86DB8DE4216CB71000967087 /* MASConstraint.m in Sources */,
+				86DB8DDF216CB71000967087 /* MASCompositeConstraint.m in Sources */,
+				86DB8DE1216CB71000967087 /* MASLayoutConstraint.m in Sources */,
 				86DB8D87216CB62000967087 /* main.m in Sources */,
 				86DB8D79216CB61F00967087 /* AppDelegate.m in Sources */,
+				86DB8DB5216CB6ED00967087 /* FoldButtonsView.m in Sources */,
+				86DB8DB4216CB6ED00967087 /* FoldButtonsViewConfig.m in Sources */,
+				86DB8DBB216CB6ED00967087 /* NSMutableAttributedString+ChangeStyle.m in Sources */,
+				86DB8DC2216CB6ED00967087 /* UIView+Handler.m in Sources */,
+				86DB8DBD216CB6ED00967087 /* BaseLabel.m in Sources */,
+				86DB8DE2216CB71000967087 /* NSArray+MASAdditions.m in Sources */,
+				86DB8DB7216CB6ED00967087 /* NSString+FiltrateRuler.m in Sources */,
+				86DB8DBE216CB6ED00967087 /* NSObject+T.m in Sources */,
+				86DB8DBA216CB6ED00967087 /* NSString+StringHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +520,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W7835H6QQA;
 				INFOPLIST_FILE = FoldButtonsView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +538,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W7835H6QQA;
 				INFOPLIST_FILE = FoldButtonsView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
