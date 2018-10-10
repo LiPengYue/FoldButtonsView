@@ -20,8 +20,9 @@
 @property (nonatomic,assign) CGFloat foldDistance;
 @end
 
-@implementation FoldButtonsView
 
+@implementation FoldButtonsView
+@synthesize config = _config;
 #pragma mark - init
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
@@ -42,6 +43,13 @@
         _buttonArrayM = [[NSMutableArray alloc]initWithCapacity:self.maxButtonCount];
     }
     return _buttonArrayM;
+}
+
+- (FoldButtonsViewConfig *)config {
+    if (!_config) {
+        _config = [FoldButtonsViewConfig new];
+    }
+    return _config;
 }
 
 - (void) setConfig:(FoldButtonsViewConfig *)config {
@@ -95,8 +103,8 @@
             self.setupButtonWhenCreatingBlock(i, button);
         }
         [self relayoutButtonWithIndex:i
-                           andArray:array
-                          andButton: button];
+                             andArray:array
+                            andButton: button];
         
     }
     return array;
@@ -382,6 +390,14 @@
             block(idx,obj);
         }
     }];
+}
+
+- (void) recreateSubButtons {
+    [self.buttonArrayM enumerateObjectsUsingBlock:^(UIButton * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [obj removeFromSuperview];
+    }];
+    [self.buttonArrayM removeAllObjects];
+    self.buttonArrayM = [self createAndLayoutButtons];
 }
 
 @end

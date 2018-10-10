@@ -21,11 +21,13 @@
 /// buttons
 @property (nonatomic,readonly) NSArray <UIButton *>*buttonArray;
 
-/// button创建的时候会调用，只有在改变maxButtonCount 的时候，才会重新创建button
+// button创建的时候会调用，在改变maxButtonCount || recreateButtons 的时候，才会重新创建button
 - (void) setupButtonWhenCreatingFunc: (void(^)(NSInteger index, UIButton *button)) block;
 
 /// 设置button的数据 到index 超过index的button会被隐藏
 - (void) reloadDataToIndex: (NSInteger)endIndex
-                      block: (void(^)(NSInteger index, UIButton *button)) block;
+                     block: (void(^)(NSInteger index, UIButton *button)) block;
+/// 强制重新创建布局button
+- (void) recreateSubButtons;
 @end
 

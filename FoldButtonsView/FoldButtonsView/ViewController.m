@@ -37,11 +37,11 @@
         [self.foldButtonsView reloadDataToIndex:8 block:^(NSInteger index, UIButton *button) {
             [button setUpStyle:UIControlStateNormal style:^(UIButton *button) {
                 button
-                .setUpBackgroundImage([UIImage imageNamed:@"".addInt(index)])
+                .setUpImage([UIImage imageNamed:@"".addInt(index)])
                 .setUpBackgroundColor(UIColor.whiteColor)
-                .setUpTitleColor(UIColor.redColor)
+                .setUpTitleColor(UIColor.whiteColor)
                 .setUpBorderWidth(2)
-                .setUpBorderColor(UIColor.redColor)
+                .setUpBorderColor(UIColor.whiteColor)
                 .setUpFont([UIFont systemFontOfSize:24])
                 .setUpMasksToBounds(true)
                 .setUpCornerRadius(button.frame.size.width/2.0);

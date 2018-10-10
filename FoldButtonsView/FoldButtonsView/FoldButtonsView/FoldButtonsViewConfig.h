@@ -38,7 +38,8 @@ typedef enum {
 @property (nonatomic,assign) CGSize buttonSize;
 /// button之间重叠的距离 越大，覆盖面积越大
 @property (nonatomic,assign) CGFloat foldDistance;
-
+/// 自定义子控件的 类型
+@property (nonatomic,assign) Class customSubButtonClass;
 
 
 /// 对其方式，
@@ -58,4 +59,6 @@ typedef enum {
 
 /// button之间重叠的距离 越大，覆盖面积越大
 - (FoldButtonsViewConfig *(^)(CGFloat foldDistance)) setFoldDistance;
+
+- (FoldButtonsViewConfig *(^)(Class customSubButtonClass)) setCustomSubButtonClass;
 @end

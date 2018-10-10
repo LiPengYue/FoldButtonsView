@@ -61,4 +61,11 @@
         return self;
     };
 }
+
+- (FoldButtonsViewConfig *(^)(Class customSubButtonClass)) setCustomSubButtonClass {
+    return ^(Class clas) {
+        self.customSubButtonClass = clas;
+        return self;
+    };
+}
 @end
