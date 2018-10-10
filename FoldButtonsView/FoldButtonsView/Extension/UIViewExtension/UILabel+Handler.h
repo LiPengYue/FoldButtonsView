@@ -10,14 +10,33 @@
 
 @interface UILabel (Handler)
 
+/**
+ * @brief  NSString 设置 text
+ * @warning 参数类型：NSString
+ */
+- (UILabel *(^)(NSString *text)) setUpText;
+/**
+ * @brief  NSAttributedString 设置 text
+ * @warning 参数类型：NSString
+ */
+- (UILabel *(^)(NSAttributedString *text)) setUpAttributedText;
+
+/**
+ * @brief NSTextAlignment textAlignment
+ * @warning 参数类型：NSTextAlignment
+ */
+- (UILabel *(^)(NSTextAlignment textAlignment))setUpAlignment;
+
 #pragma mark - color
 
+/**
+ * @brief UIColor textColor
+ * @warning 参数类型：UIColor
+ */
 - (UILabel *(^)(UIColor *color))setUpTextColor;
 
 /**
  * @brief CGFloat textColor RGBA
- *
- * @warning 横向还是纵向进行优先级限制
  * @warning 参数类型： 四个 CGFloat 值（分别代表r g b a）例如： [UILabel new].setUpTextColorRGBA(255,255,255,0.1);
  */
 - (UILabel *(^)(CGFloat r,
@@ -26,8 +45,6 @@
                 CGFloat a))setUpTextColorRGBA;
 /**
  * @brief CGFloat textColor RGB
- *
- * @warning 横向还是纵向进行优先级限制
  * @warning 参数类型： 四个 CGFloat 值（分别代表r g b）例如： [UILabel new].setUpTextColorRGBA(255,255,255);
  */
 - (UILabel *(^)(CGFloat r,

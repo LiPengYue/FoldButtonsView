@@ -14,6 +14,9 @@
 
 @interface ViewController ()
 @property (nonatomic,strong) FoldButtonsView *foldButtonsView;
+@property (nonatomic,strong) UILabel *leftLabel;
+@property (nonatomic,strong) UILabel *midLabel;
+@property (nonatomic,strong) UILabel *rightLabel;
 @end
 
 @implementation ViewController
@@ -22,12 +25,25 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self.view addSubview: self.foldButtonsView];
+    [self.view addSubview:self.leftLabel];
+    [self.view addSubview:self.midLabel];
+    [self.view addSubview:self.rightLabel];
     
-    
+    [self.leftLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.equalTo(@10);
+    }];
+    [self.midLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.leftLabel);
+        make.left.equalTo(self.leftLabel.mas_right);
+    }];
+    [self.rightLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.midLabel);
+        make.left.equalTo(self.midLabel.mas_right);
+    }];
     
     [self.foldButtonsView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view).offset(20);
-        make.top.equalTo(@80);
+        make.top.equalTo(self.rightLabel.mas_bottom).offset(80);
         make.height.equalTo(@80);
         make.right.equalTo(self.view).offset(-20);
     }];
@@ -97,4 +113,40 @@
     return _foldButtonsView;
 }
 
+
+/// - leftLabel label
+- (UILabel *) leftLabel {
+    if (!_leftLabel) {
+        _leftLabel = [UILabel new];
+        _leftLabel.textAlignment = NSTextAlignmentLeft;
+        _leftLabel
+        .setUpAlignment(NSTextAlignmentLeft)
+        .setUpUILayoutPriority(UILayoutPriorityRequired)
+        .setUpUILayoutConstraintAxis(UILayoutConstraintAxisHorizontal);
+    }
+    return _leftLabel;
+}
+- (UILabel *) midLabel {
+    if (!_midLabel) {
+        _midLabel = [UILabel new];
+        _midLabel.textAlignment = NSTextAlignmentLeft;
+        _midLabel
+        .setUpAlignment(NSTextAlignmentLeft)
+        .setUpUILayoutPriority(UILayoutPriorityRequired)
+        .setUpUILayoutConstraintAxis(UILayoutConstraintAxisHorizontal);
+    }
+    return _midLabel;
+}
+- (UILabel *) rightLabel {
+    if (!_rightLabel) {
+        _rightLabel = [UILabel new];
+        _rightLabel.textAlignment = NSTextAlignmentLeft;
+        _rightLabel
+        .setUpTextColorRGBA(233,222,39,0.6)
+        .setUpAlignment(NSTextAlignmentLeft)
+        .setUpUILayoutPriority(UILayoutPriorityDefaultLow)
+        .setUpUILayoutConstraintAxis(UILayoutConstraintAxisHorizontal);
+    }
+    return _rightLabel;
+}
 @end

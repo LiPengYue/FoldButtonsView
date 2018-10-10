@@ -9,6 +9,28 @@
 #import "UILabel+Handler.h"
 
 @implementation UILabel(Handler)
+
+- (UILabel *(^)(NSString *text)) setUpText {
+    return ^(NSString *text){
+        self.text = text;
+        return self;
+    };
+}
+
+- (UILabel *(^)(NSAttributedString *text)) setUpAttributedText {
+    return ^(NSAttributedString *text){
+        self.attributedText = text;
+        return self;
+    };
+}
+
+- (UILabel *(^)(NSTextAlignment textAlignment))setUpAlignment {
+    return ^(NSTextAlignment textAlignment){
+        self.textAlignment = textAlignment;
+        return self;
+    };
+}
+
 - (UILabel *(^)(CGFloat r,
                 CGFloat g,
                 CGFloat b,
