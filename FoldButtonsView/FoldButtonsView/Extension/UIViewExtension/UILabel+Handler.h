@@ -10,21 +10,31 @@
 
 @interface UILabel (Handler)
 
-#pragma mark - color 
+#pragma mark - color
 
 - (UILabel *(^)(UIColor *color))setUpTextColor;
 
-/// textColor RGBA
+/**
+ * @brief CGFloat textColor RGBA
+ *
+ * @warning 横向还是纵向进行优先级限制
+ * @warning 参数类型： 四个 CGFloat 值（分别代表r g b a）例如： [UILabel new].setUpTextColorRGBA(255,255,255,0.1);
+ */
 - (UILabel *(^)(CGFloat r,
                 CGFloat g,
                 CGFloat b,
                 CGFloat a))setUpTextColorRGBA;
-/// textColor RGB
+/**
+ * @brief CGFloat textColor RGB
+ *
+ * @warning 横向还是纵向进行优先级限制
+ * @warning 参数类型： 四个 CGFloat 值（分别代表r g b）例如： [UILabel new].setUpTextColorRGBA(255,255,255);
+ */
 - (UILabel *(^)(CGFloat r,
                 CGFloat g,
                 CGFloat b))setUpTextColorRGB;
-#pragma mark - font
 
+#pragma mark - font
 - (UILabel *(^)(UIFont *font))fontSetUp;
 
 //Futura 字体
@@ -56,8 +66,10 @@
 ///CGFloat didotuRegulerFont
 - (UILabel *(^)(CGFloat size)) fontDidotR;
 ///CGFloat robotoCondensedRegulerFont
-- (UILabel *(^)(CGFloat size))robotoCondensedR;
-///CGFloat robotoCondensedRegulerFontBold
-- (UILabel *(^)(CGFloat size)) robotoCondensedRB;
+- (UILabel *(^)(CGFloat size)) robotoCondensedR;
+///CGFloat robotoCondensed-Bold
+- (UILabel *(^)(CGFloat size)) robotoCondensedB;
+
+- (UILabel *(^)(CGFloat size)) robotoCondensedL;
 
 @end

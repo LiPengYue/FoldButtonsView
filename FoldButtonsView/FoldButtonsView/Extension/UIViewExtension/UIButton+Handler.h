@@ -72,76 +72,71 @@
 - (UIButton *(^)(CGFloat size)) robotoCondensedRB;
 
 /**
- * @brief 设置normal 状态下的titleColor
- *
- * @return 返回 一个返回self的block.
- *
+ * @brief UIColor 设置normal 状态下的titleColor
  * @warning 注意: 在 setUpStyle:setUp: 方法中 设置state对应的titleColor
+ * @warning 参数类型: UIColor
  */
 - (UIButton *(^)(UIColor *)) setUpTitleColor;
 
 /**
- * @brief 设置normal 状态下的背景色
- *
- * @return 返回 一个返回self的block.
- *
+ * @brief UIColor 设置normal 状态下的背景色
  * @warning 注意: 在 setUpStyle:setUp: 方法中 设置state对应的backgroundColor
+ * @warning 参数类型: UIColor
  */
 - (UIButton *(^)(UIColor *)) setUpBackgroundColor;
 
 /**
- * @brief 设置normal 状态下的Font
- *
- * @return 返回 一个返回self的block.
- *
+ * @brief NSString 设置normal 状态下的Font
  * @warning 注意: 在 setUpStyle:setUp: 方法中 设置state对应的title
+ * @warning 参数类型: NSString
  */
 - (UIButton *(^)(NSString *)) setUpTitle;
 
 /**
- * @brief 设置normal 状态下的】AttributedString
- *
- * @return 返回 一个返回self的block.
- *
+ * @brief NSAttributedString 设置normal 状态下的 AttributedString
  * @warning 注意: 在 setUpStyle:setUp: 方法中 设置state对应的AttributedString
+ * @warning 参数类型: NSAttributedString
  */
 - (UIButton *(^)(NSAttributedString *)) setUpAttributedString;
 
 
 /**
  * @brief 设置normal 状态下的image
- *
- * @return 返回 一个返回self的block.
- *
  * @warning 注意: 在 setUpStyle:setUp: 方法中 设置的是对应state的image
+ * @warning 参数类型: UIImage
  */
 - (UIButton *(^)(UIImage *)) setUpImage;
-
 /**
- * @brief 设置normal 状态下的backgroundImage
- *
- * @return 返回 一个返回self的block.
- *
- * @warning 注意: 在 setUpStyle:setUp: 方法中 设置的是对应state的backgroundImage
+ * @brief NSString 设置normal 状态下的image
+ * @warning 注意: 在 setUpStyle:setUp: 方法中 设置的是对应state的image
+ * @warning 参数类型: NSString
  */
-
-- (UIButton *(^)(UIImage *)) setUpBackgroundImage;
+- (UIButton *(^)(NSString *name)) setUpImageName;
 
 /**
- * @brief 设置normal 状态下的layer BorderWidth
- *
- * @return 返回 一个返回self的block.
+ * @brief UIImage 设置normal 状态下的backgroundImage
+ * @warning 注意: 在 setUpStyle:setUp: 方法中 设置的是对应state的backgroundImage
+ * @warning 参数类型: UIImage
+ */
+- (UIButton *(^)(UIImage *)) setUpBackgroundImage;
+/**
+ * @brief NSString 设置normal 状态下的backgroundImage
+ * @warning 注意: 在 setUpStyle:setUp: 方法中 设置的是对应state的backgroundImage
+ * @warning 参数类型: NSString
+ */
+- (UIButton *(^)(NSString *)) setUpBackgroundImageName;
+/**
+ * @brief CGFloat 设置normal 状态下的layer BorderWidth
  *
  * @warning 注意: 在 setUpStyle:setUp: 方法中 设置的是对应state的BorderWidth
+ * @warning 参数类型: CGFloat
  */
 - (UIButton *(^)(CGFloat)) setUpBorderWidth;
 
 /**
- * @brief 设置normal 状态下的layer border color
- *
- * @return 返回 一个返回self的block.
- *
+ * @brief UIColor 设置normal 状态下的layer border color
  * @warning 注意: 在 setUpStyle:setUp: 方法中 设置的是对应state的BorderColor
+ * @warning 参数类型: UIColor
  */
 - (UIButton *(^)(UIColor *)) setUpBorderColor;
 @end

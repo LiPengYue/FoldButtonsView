@@ -7,6 +7,15 @@
 //
 
 #import "UIView+Handler.h"
+#import <objc/runtime.h>
+
+static NSString *const k_layoutConstraintAxisNumber = @"k_layoutConstraintAxisNumber";
+static NSString *const k_layoutPriorityNumber = @"k_layoutPriority";
+
+@interface UIView (Handler)
+@property (nonatomic,assign) NSNumber *layoutConstraintAxisNumber;
+@property (nonatomic,assign) NSNumber *layoutPriorityNumber;
+@end
 
 @implementation UIView (Handler)
 
@@ -47,4 +56,40 @@
         return weakSelf;
     };
 }
+
+- (UIView *(^)(UILayoutConstraintAxis))setUpUILayoutConstraintAxis {
+    return ^(UILayoutConstraintAxis axis) {
+        self.layoutConstraintAxisNumber = @(axis);
+        [self setupLayoutPriority];
+        return self;
+    };
+}
+- (UIView *(^)(UILayoutPriority))setUpUILayoutPriority {
+    return ^(UILayoutPriority priority) {
+        self.layoutPriorityNumber = @(priority);
+        [self setupLayoutPriority];
+        return self;
+    };
+}
+
+- (void) setupLayoutPriority {
+    if (self.layoutPriorityNumber && self.layoutConstraintAxisNumber) {
+        [self setContentCompressionResistancePriority:self.layoutPriorityNumber.integerValue forAxis:self.layoutConstraintAxisNumber.integerValue];
+    }
+}
+
+- (NSNumber *)layoutConstraintAxisNumber {
+    return objc_getAssociatedObject(self, &k_layoutConstraintAxisNumber);
+}
+- (void)setLayoutConstraintAxisNumber:(NSNumber *)layoutConstraintAxisNumber {
+    objc_setAssociatedObject(self, &k_layoutConstraintAxisNumber, layoutConstraintAxisNumber, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (NSNumber *)layoutPriorityNumber {
+    return objc_getAssociatedObject(self, &k_layoutPriorityNumber);
+}
+- (void)setLayoutPriorityNumber:(NSNumber *)layoutPriorityNumber {
+    objc_setAssociatedObject(self, &k_layoutPriorityNumber, layoutPriorityNumber, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
 @end
